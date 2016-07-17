@@ -4,6 +4,7 @@
   "description": "Discover Chromecasts via mdns",
   "main": "index.js",
   "dependencies": {
+    "debug": "^2.2.0",
     "mdns-js": "^0.5.0"
   },
   "devDependencies": {},
