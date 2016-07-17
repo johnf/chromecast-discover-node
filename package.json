@@ -1,0 +1,23 @@
+{
+  "name": "chromecast-discover",
+  "version": "0.0.0",
+  "description": "Discover Chromecasts via mdns",
+  "main": "index.js",
+  "dependencies": {
+    "mdns-js": "^0.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/johnf/chromecast-discover-node.git"
+  },
+  "keywords": [
+    "chromecast"
+  ],
+  "author": "John Ferlito <johnf@inodes.org> (http://inodes.org)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnf/chromecast-discover-node/issues"
+  },
+  "homepage": "https://github.com/johnf/chromecast-discover-node#readme"
+}
