@@ -38,12 +38,17 @@ var ChromecastDiscover = function() {
   });
 
   browser.on('update', function (data) {
-    debug('update');
-    debug(data);
+    debug('update', data);
 
     var type = data.type[0];
     if (type.name !== 'googlecast' || type.protocol !== 'tcp') {
-      debug('skipped');
+      debug('skipped: not a chromecast');
+      return;
+    }
+
+    // Sometimes the chromecast sends out an unsolicited record
+    if (! data.txt) {
+      debug('skipped: no txt record');
       return;
     }
 
