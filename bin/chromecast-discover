@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var chromecastDiscover = require('..');
+
+chromecastDiscover.on('online', function(data) {
+  console.log('Found chromecast: ', data);
+});
