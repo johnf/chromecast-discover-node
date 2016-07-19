@@ -1,6 +1,5 @@
 {
   "changelogCommand": "changelog",
-  "requireCleanWorkingDir": true,
   "github": {
     "release": true
   }
