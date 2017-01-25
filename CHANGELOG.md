@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.3 - 2017-01-26
+
+* Convert to ES6 (@johnf)
+* Fix API so as to not miss packets (@johnf)
+* Add `streaming` and `appName` mappings (@johnf)
+
 ## 0.0.2 - 2016-07-19
 
 * Add bin/chromecast-discover for testing (@johnf)
