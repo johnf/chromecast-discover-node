@@ -11,12 +11,12 @@ const MAPPINGS = {
   md: 'model',
   ic: 'iconPath',
   fn: 'friendlyName',
+  st: 'streaming',
+  rs: 'appName',
   // TODO: We don't know what these are
   // rm=A390B9102AC7C3A3
   // ca=4101
-  // st=0
   // bs=FA8FCA3C73B9
-  // rs=
 };
 
 class ChromecastDiscover extends EventEmitter {
