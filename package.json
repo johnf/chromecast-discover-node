@@ -2,7 +2,7 @@
   "name": "chromecast-discover",
   "version": "0.0.2",
   "description": "Discover Chromecasts via mdns",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack -p",
     "lint": "eslint .",
@@ -23,6 +23,7 @@
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
     "json-loader": "^0.5.4",
+    "path": "^0.12.7",
     "webpack": "^1.14.0"
   },
   "repository": {

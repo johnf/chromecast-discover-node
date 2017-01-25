@@ -29,7 +29,7 @@ chromecastDiscover.start()
 
 After checking out the repo, run `npm test` to run the tests.
 
-To release a new version, update the version number in `package.json`, and then run `npm version major|minor`, which will create a git tag for the version, push git commits and tags. Finally run `npm publish` ro push the modulfe file to [npmjs.com](https://npmjs.com).
+To release a new version, update the version number in `package.json`, and then run `npm version major|minor`, which will create a git tag for the version, push git commits and tags. Finally run `npm publish` to push the module file to [npmjs.com](https://npmjs.com).
 
 ## Contributing
 
