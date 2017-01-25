@@ -1,0 +1,7 @@
+{
+  "compact": false,
+  "presets": ["latest"],
+  "plugins": [
+    "add-module-exports"
+  ]
+}
