@@ -23,6 +23,8 @@ class ChromecastDiscover extends EventEmitter {
   constructor() {
     super();
 
+    this.ready = false;
+
     const mdnsType = mdns.tcp('googlecast');
 
     const browser = new mdns.createBrowser(mdnsType); // eslint-disable-line new-cap
@@ -32,9 +34,7 @@ class ChromecastDiscover extends EventEmitter {
     browser.on('ready', () => {
       debug('ready');
 
-      debug('initial query');
-
-      browser.discover();
+      this.ready = true;
     });
 
     browser.on('update', (data) => {
@@ -79,7 +79,15 @@ class ChromecastDiscover extends EventEmitter {
     });
   }
 
-  query() {
+  start() {
+    const self = this;
+
+    if (!this.ready) {
+      debug('not ready');
+      setTimeout(() => self.query(), 250);
+      return;
+    }
+
     debug('send discover');
     this.browser.discover();
   }

@@ -20,6 +20,9 @@ var chromecastDiscover = require('chromecast-discover');
 chromecastDiscover.on('online', function(data) {
   console.log(data);
 });
+
+// Start querying
+chromecastDiscover.start()
 ```
 
 ## Development
