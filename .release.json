@@ -1,6 +1,0 @@
-{
-  "changelogCommand": "changelog",
-  "github": {
-    "release": true
-  }
-}
