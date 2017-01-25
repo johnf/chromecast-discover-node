@@ -1,6 +1,6 @@
 {
   "name": "chromecast-discover",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Discover Chromecasts via mdns",
   "main": "dist/index.js",
   "scripts": {
