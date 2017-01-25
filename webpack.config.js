@@ -1,4 +1,4 @@
-var path = require('path');
+var path = require('path'); // eslint-disable-line no-var
 
 module.exports = {
   entry: './src/index.js',
