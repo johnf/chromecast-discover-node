@@ -20,7 +20,8 @@
     "eslint-plugin-react": "^6.9.0",
     "json-loader": "^0.5.4",
     "path": "^0.12.7",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-node-externals": "^1.5.4"
   },
   "homepage": "https://github.com/johnf/chromecast-discover-node#readme",
   "keywords": [
@@ -36,7 +37,10 @@
   "scripts": {
     "build": "webpack -p",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postversion": "git push",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "vi CHANGELOG.md && git add CHANGELOG.md"
   },
   "version": "1.0.0"
 }

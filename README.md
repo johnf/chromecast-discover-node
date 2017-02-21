@@ -3,7 +3,7 @@
 [![Circle CI](https://circleci.com/gh/johnf/chromecast-discover-node.svg?style=svg)](https://circleci.com/gh/johnf/netflix-login-node)
 [![Coverage Status](https://coveralls.io/repos/johnf/chromecast-discover-node/badge.svg?branch=master&service=github)](https://coveralls.io/github/johnf/netflix-login-node?branch=master)
 
-Discovers Cromecasts via mdns
+Discovers Chromecasts via mdns
 
 ## Installation
 
@@ -28,7 +28,13 @@ chromecastDiscover.start();
 
 After checking out the repo, run `npm test` to run the tests.
 
-To release a new version, update the version number in `package.json`, and then run `npm version major|minor`, which will create a git tag for the version, push git commits and tags. Finally run `npm publish` to push the module file to [npmjs.com](https://npmjs.com).
+To release a new version:
+
+* npm test
+* npm version major|minor|patch
+* npm publish
+
+This will run the tests, update the version, create a git tag for the version, push git commits and tags. Publish the module file to [npmjs.com](https://npmjs.com).
 
 ## Contributing
 
