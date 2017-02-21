@@ -2,6 +2,7 @@ var path = require('path'); // eslint-disable-line no-var
 var nodeExternals = require('webpack-node-externals'); // eslint-disable-line no-var
 
 module.exports = {
+  devtool: 'source-map',
   entry: './src/index.js',
   target: 'node',
   output: {
@@ -12,10 +13,17 @@ module.exports = {
   },
   externals: [nodeExternals()],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        enforce: 'pre',
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+      },
+
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
         exclude: /node_modules/,
       },
     ],
