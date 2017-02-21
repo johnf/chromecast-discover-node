@@ -14,15 +14,14 @@ npm install chromecast-discover
 ## Usage
 
 ``` javascript
+import chromecastDiscover from 'chromecast-discover';
 
-var chromecastDiscover = require('chromecast-discover');
+chromecastDiscover.on('online', (data) => {
+  console.log('Found chromecast: ', data);
 
-chromecastDiscover.on('online', function(data) {
-  console.log(data);
 });
 
-// Start querying
-chromecastDiscover.start()
+chromecastDiscover.start();
 ```
 
 ## Development

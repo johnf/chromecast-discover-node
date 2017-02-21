@@ -1,12 +1,9 @@
 #!/usr/bin/env node
 
-var chromecastDiscover = require('..');
+import chromecastDiscover from '../src';
 
-chromecastDiscover.on('online', function(data) {
-  console.log('Found chromecast: ', data);
+chromecastDiscover.on('online', (data) => {
+  console.log('Found chromecast: ', data); // eslint-disable-line no-console
 });
 
-setTimeout(function() {
-  console.log("Query");
-  chromecastDiscover.start();
-}, 1000);
+chromecastDiscover.start();
