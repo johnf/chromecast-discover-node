@@ -1,17 +1,13 @@
 {
-  "name": "chromecast-discover",
-  "version": "1.0.0",
-  "description": "Discover Chromecasts via mdns",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "webpack -p",
-    "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "John Ferlito <johnf@inodes.org> (http://inodes.org)",
+  "bugs": {
+    "url": "https://github.com/johnf/chromecast-discover-node/issues"
   },
   "dependencies": {
     "debug": "^2.2.0",
     "mdns-js": "^0.5.3"
   },
+  "description": "Discover Chromecasts via mdns",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
@@ -26,17 +22,21 @@
     "path": "^0.12.7",
     "webpack": "^1.14.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/johnf/chromecast-discover-node.git"
-  },
+  "homepage": "https://github.com/johnf/chromecast-discover-node#readme",
   "keywords": [
     "chromecast"
   ],
-  "author": "John Ferlito <johnf@inodes.org> (http://inodes.org)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johnf/chromecast-discover-node/issues"
+  "main": "dist/index.js",
+  "name": "chromecast-discover",
+  "repository": {
+    "type": "git",
+    "url": "johnf/chromecast-discover-node"
   },
-  "homepage": "https://github.com/johnf/chromecast-discover-node#readme"
+  "scripts": {
+    "build": "webpack -p",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }
