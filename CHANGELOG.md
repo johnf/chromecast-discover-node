@@ -1,6 +1,12 @@
 # Changelog
 
-## 0.0.3 - 2017-01-26
+## 1.0.1 - 2017-02-25
+
+* Convert examples to ES6 (@johnf)
+* Move to webpack2 (@johnf)
+* Fix bug on discover (@johnf)
+
+## 1.0.0 - 2017-01-26
 
 * Convert to ES6 (@johnf)
 * Fix API so as to not miss packets (@johnf)
