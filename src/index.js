@@ -84,7 +84,7 @@ class ChromecastDiscover extends EventEmitter {
 
     if (!this.ready) {
       debug('not ready');
-      setTimeout(() => self.query(), 250);
+      setTimeout(() => self.start(), 250);
       return;
     }
 
