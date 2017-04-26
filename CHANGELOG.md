@@ -1,5 +1,10 @@
 # Changelog
 
+## NEXT - 2017-04-26
+
+* Remove compiled files from version control (@johnf)
+* Switch to yarn (@johnf)
+
 ## 1.0.1 - 2017-02-25
 
 * Convert examples to ES6 (@johnf)
