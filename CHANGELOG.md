@@ -1,6 +1,6 @@
 # Changelog
 
-## NEXT - 2017-04-26
+## 1.0.2 - 2017-04-26
 
 * Remove compiled files from version control (@johnf)
 * Switch to yarn (@johnf)
