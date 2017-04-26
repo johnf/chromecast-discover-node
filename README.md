@@ -31,7 +31,7 @@ After checking out the repo, run `yarn test` to run the tests.
 To release a new version:
 
 * yarn test
-* yarn version major|minor|patch
+* yarn version
 * yarn publish
 
 This will run the tests, update the version, create a git tag for the version, push git commits and tags. Publish the module file to [npmjs.com](https://npmjs.com).
