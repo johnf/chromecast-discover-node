@@ -8,7 +8,7 @@ Discovers Chromecasts via mdns
 ## Installation
 
 ``` bash
-yarn install chromecast-discover
+yarn add chromecast-discover
 ```
 
 ## Usage
