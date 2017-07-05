@@ -1,6 +1,6 @@
 # Changelog
 
-## NEXT
+## 1.0.3 - 2017-07-05
 
 * Make sure dist is shipped when using yarn (@johnf)
 
