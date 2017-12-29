@@ -13,9 +13,9 @@ const MAPPINGS = {
   fn: 'friendlyName',
   st: 'streaming',
   rs: 'appName',
+  ca: 'certificateAuthority',
   // TODO: We don't know what these are
   // rm=A390B9102AC7C3A3
-  // ca=4101
   // bs=FA8FCA3C73B9
 };
 

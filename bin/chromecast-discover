@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import chromecastDiscover from '../src';
+const chromecastDiscover = require('../dist').default;
 
 chromecastDiscover.on('online', (data) => {
   console.log('Found chromecast: ', data); // eslint-disable-line no-console
