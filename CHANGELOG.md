@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.6 - 2017-12-29
+
+* Clean up (@johnf)
+
 ## 1.0.3 - 2017-07-05
 
 * Make sure dist is shipped when using yarn (@johnf)
