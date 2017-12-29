@@ -1,4 +1,4 @@
-# Changelog
+# Change Log
 
 ## 1.0.3 - 2017-07-05
 

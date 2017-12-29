@@ -4,23 +4,23 @@
     "url": "https://github.com/johnf/chromecast-discover-node/issues"
   },
   "dependencies": {
-    "debug": "^2.6.8",
-    "eslint-loader": "^1.8.0",
-    "mdns-js": "^0.5.3"
+    "debug": "^3.1.0",
+    "eslint-loader": "^1.9.0",
+    "mdns-js": "0.5.3"
   },
   "description": "Discover Chromecasts via mdns",
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^7.1.1",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-latest": "^6.22.0",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.2",
-    "eslint-plugin-import": "^2.6.1",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
-    "webpack": "^3.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "webpack": "^3.10.0",
+    "webpack-monitor": "^1.0.14",
     "webpack-node-externals": "^1.6.0"
   },
   "homepage": "https://github.com/johnf/chromecast-discover-node#readme",
@@ -29,13 +29,14 @@
   ],
   "license": "ISC",
   "main": "dist/index.js",
+  "module": "src/index.js",
   "name": "chromecast-discover",
   "repository": {
     "type": "git",
     "url": "johnf/chromecast-discover-node"
   },
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack",
     "lint": "eslint .",
     "postversion": "git push",
     "prepublish": "yarn run build",

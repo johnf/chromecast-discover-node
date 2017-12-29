@@ -1,16 +1,16 @@
-var path = require('path'); // eslint-disable-line no-var
-var nodeExternals = require('webpack-node-externals'); // eslint-disable-line no-var
+const path = require('path');
+const nodeExternals = require('webpack-node-externals');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
+const WebpackMonitor = require('webpack-monitor');
 
 module.exports = {
-  devtool: 'source-map',
   entry: './src/index.js',
-  target: 'node',
   output: {
-    path: path.join(__dirname, 'dist'),
-    library: 'chromecast-discover',
-    libraryTarget: 'umd',
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
+    libraryTarget: 'commonjs2',
   },
+  target: 'node',
   externals: [nodeExternals()],
   module: {
     rules: [
@@ -27,4 +27,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new MinifyPlugin(),
+    new WebpackMonitor({
+      target: '../.monitor.json',
+    }),
+  ],
 };
