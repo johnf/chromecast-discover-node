@@ -29,7 +29,6 @@
   ],
   "license": "ISC",
   "main": "dist/index.js",
-  "module": "src/index.js",
   "name": "chromecast-discover",
   "repository": {
     "type": "git",
