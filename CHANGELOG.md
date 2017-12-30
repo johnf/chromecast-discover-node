@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.7 - 2017-12-30
+
+* Stop publishing ES6 (@johnf)
+
 ## 1.0.6 - 2017-12-29
 
 * Clean up (@johnf)
